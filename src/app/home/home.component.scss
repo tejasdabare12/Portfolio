@@ -6,24 +6,23 @@
     left: 0;
     background-color: #111;
     overflow-x: hidden;
-    padding-top: 20px;
     display: flex;
     flex-direction: column;
 
     .Profile{
         background-color: antiquewhite;
         width: 100%;
-        height: auto;
+        height: 50%;
     }
     .navigaters{
-        background-color: pink;
+        background-color: rgb(250, 6, 46);
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
 
         .tab{
+            background-color: rgb(56, 76, 94);
             display: flex;
-            flex-direction: row;
-            border-top: 1px solid red;
+            flex-direction:row;
         }
     }
   }
