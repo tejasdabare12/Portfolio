@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class DownloadComponent {
 
+  Active: boolean = false;
+  onClick(){
+    console.log("click")
+    this.Active =!this.Active;
+  }
 }

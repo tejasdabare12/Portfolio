@@ -1,119 +1,81 @@
-section {
-	width: 100%;
-	display: table;
-}
-
-.center {
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-}
-
-.trigger {
-	position: relative;
-	background: #4a1942;
-	display: inline-block;
-	width: 200px;
+.tab {
+    display: flex;
+    align-items: center;
+    padding:0;
 	height: 60px;
-	border-radius: 50em;
-	box-shadow: 0 2px 20px rgba(0,0,0,0.7), inset 0 1px 0 rgba(255,255,255,0.2);
-	color: #fff;
+	width: 90%;
+	line-height: 50px;
+    background-color: #0F141C;
+    border-radius: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+	
+}
+.Download{
+	background-color: green;
 }
 
-span, em, i {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	/*background: yellow;
-	opacity: .5;*/
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+	display: block;
+    background-color: #FF759C;
+    position:relative;
+    margin: 5px;
+    line-height: 42px;
+    height: 48px;
+    width: 48px;
+    top: 1px;
+    left: 0;
+    transition: .5s;
+    border-radius: 50%;
+	font-size: 20px;
+	img{
+		margin-left: 12px;
+		width: 50%;
+		height: 50%;
+		object-fit: contain;
+	}
+
 }
 
-em, i {
-	transition: top 0.3s;
+.tab:hover {
+    background-color: #FF759C;
 }
 
-span {
-/* 	
-	uncomment this to see where actually the
-	Download and SVG located on initial state
-	and on hover
-	 */
-	overflow: hidden;
+.tab:hover .icon {
+    transform: translateX(170px);
+	background-color: rgb(255, 255, 255);
 }
 
-em {
-	line-height: 60px; /*make the button text vertically center of the button*/
-	top: 0;
+.download {
+    display: block;
 }
 
-i {
-	top: 100%; /*moving out the SVG to the bottom on page loads*/
-  padding-top:20px;
+.click-here {
+    display: none;
 }
 
-i::before {
-  content: url("../../assets/file-earmark-arrow-down-fill.svg");
-  font-family: FontAwesome;
-  font-size: 20px;
+.tab:hover .download {
+    display: none;
 }
 
-.trigger:hover em {
-	top: -100%; /* move the Download text to the top*/
+.tab:hover .click-here {
+    display: block;
 }
 
-.trigger:hover i {
-	top: 0;
+.tab span {
+    margin-left: 10px;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+	font-weight: 500;
 }
 
-/*Tooltip*/
-.trigger::before,
-.trigger::after {
-	position: absolute;
-	opacity: 0; /*hide on page load*/
-	visibility: hidden; /*to stop interaction when user hover on top of the button*/
-	transition: all 0.3s;
-}
-
-.trigger::before {
-	content: "File size: 50M";
-	width: 140px;
-	height: 60px;
-	line-height: 60px; /*to make the text vertically center*/
-	background: #4A1942;
-	border-radius: 0.25em;
-	bottom: 90px;
-	left: calc(50% - 70px); /*take the left size of the box and pull it left by 70px (half of the box's width) referencing .trigger element as the base*/
-}
-
-/*the triangle below the `File size` box*/
-.trigger::after {
-	content: "";
-	width: 0;
-	height: 0;
-	border: 10px solid transparent;
-	/*
-	each border side is 10px width
-	this makes the square 20px width in total
-	left to center = 10px
-	center to right = 10px
-	*/
-	border-top-color: #4A1942;
-	left: calc(50% - 10px); /*take the left size of the box and pull it left by 10px (half of the box's width) referencing .trigger element as the base*/
-	bottom: 70px;
-}
-
-.trigger:hover::before,
-.trigger:hover::after {
-	opacity: 1;
-	visibility: visible;
-}
-
-/*pull down effect for the `File size` box when we hover the button*/
-.trigger:hover::before {
-	bottom: 80px;
-}
-
-.trigger:hover::after {
-	bottom: 60px;
+@media only screen and (max-width: 400px) {
+    .tab{
+		width: 65%;
+	}
 }
