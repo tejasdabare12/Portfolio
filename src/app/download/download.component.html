@@ -1,7 +1,14 @@
-<div class="tab" (click)="onClick()"  [ngClass]="{'Download': Active}">
+<div (click)="onClick()" (click)="downloadPDF()" [ngClass]="{ tab: !Active }" *ngIf="!Active">
   <div class="icon">
-      <img src="../../assets/download.svg" alt="icon">
+    <img [src]="CurrentImage" alt="icon" />
   </div>
   <span class="text download">Download CV</span>
   <span class="text click-here">Click Here</span>
+</div>
+
+<div (click)="onClick()" [ngClass]="{ Download: Active }" *ngIf="Active">
+  <span class="text download">Download complete</span>
+  <div class="icon2">
+    <img [src]="CurrentImage" alt="icon2" />
+  </div>
 </div>
