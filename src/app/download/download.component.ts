@@ -12,7 +12,6 @@ export class DownloadComponent implements OnChanges{
   ]
   CurrentImage=this.Images[0];
   ngOnChanges(changes: SimpleChanges): void {
-    
   }
 
   Active: boolean = false;
@@ -23,7 +22,6 @@ export class DownloadComponent implements OnChanges{
 }
 
 downloadPDF() {
-  console.log("I am winner")
   const pdfUrl = '../../assets/Resume_tejas.pdf'; // Replace with your PDF file URL
   
   const link = document.createElement('a');
