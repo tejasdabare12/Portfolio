@@ -1,0 +1,135 @@
+.tab {
+    display: flex;
+    align-items: center;
+    padding:0;
+	height: 60px;
+	width: 90%;
+	line-height: 50px;
+    background-color: #0F141C;
+    border-radius: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+	
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s;
+	display: block;
+    background-color: #FF759C;
+    position:relative;
+    margin: 5px;
+    line-height: 42px;
+    height: 48px;
+    width: 48px;
+    left: 0;
+    transition: .5s;
+    border-radius: 50%;
+	font-size: 20px;
+	transition-timing-function:linear;
+	img{
+		margin-left: 12px;
+		width: 50%;
+		height: 50%;
+		object-fit: contain;
+	}
+
+}
+
+.tab:hover {
+    background-color: #FF759C;
+}
+
+.tab:hover .icon {
+    left: calc(100% - 58px); 
+	background-color: rgb(255, 255, 255);
+}
+
+.download {
+    display: block;
+}
+
+.click-here {
+    display: none;
+}
+
+.tab:hover .download {
+    display: none;
+}
+
+.tab:hover .click-here {
+    display: block;
+}
+
+.tab span {
+	margin-left: 10%;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+	font-weight: 600;
+}
+
+@media only screen and (max-width: 400px) {
+    .tab{
+		width: 65%;
+	}
+    .Download{
+        width: 65%;
+    }
+}
+
+.Download {
+    display: flex;
+    align-items: center;
+    padding:0;
+	height: 60px;
+	width: 90%;
+	line-height: 50px;
+   background-color: white;
+   color: #54a33c;
+    border-radius: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+    justify-content: flex-end;
+	
+}
+
+.icon2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s;
+    position: relative;
+    margin: 5px;
+    line-height: 42px;
+    height: 48px;
+    width: 48px;
+    left: 0;
+    border-radius: 50%;
+}
+
+.icon2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.Download  span {
+	margin-left: 5%;
+    color:#54a33c;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+	font-weight: 600;
+}
+
+@media only screen and (max-width: 400px) {
+    .tab{
+		width: 65%;
+	}
+    .Download{
+        width: 65%;
+    }
+}
