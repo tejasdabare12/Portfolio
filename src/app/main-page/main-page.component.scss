@@ -1,0 +1,39 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 10vh;
+  padding: 0 20px 0 35px;
+
+  .fullName {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: var(--1, #fff);
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 120px;
+    font-family: sans-serif;
+
+    .name {
+    }
+    .surname {
+      font-weight: 400;
+    }
+  }
+  .position{   
+    color: var(--7, #FF759C);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    padding: 20px 0;
+  }
+  .service{
+    color: var(--14, #909090);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-wrap:wrap;
+    width: 410px;
+  }
+}

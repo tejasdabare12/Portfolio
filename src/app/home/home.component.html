@@ -1,9 +1,13 @@
-<div class="row">
+<div class="row" style="padding: 0;"  >
   <div class="col-md-3 sidenav">
     <div class="Profile">
       <div class="Image"></div>
-      <div class="Name"></div>
-      <div class="Position"></div>
+      <div class="Name">
+        <p>Tejas</p><p class="surname"> Dabare</p>
+      </div>
+
+      <div class="Position">{{currentWord}}</div>
+
       <div class="contact">
         <li>
           <ul><i class="bi bi-envelope"></i></ul>
@@ -13,7 +17,7 @@
       </div>
     </div>
     <div class="navigators">
-      <a class="tab" href="#home">
+      <a class="tab" href="#main_page">
         <div><i class="bi bi-house icon"></i></div>
         <div class="tag">Home</div>
       </a>
@@ -29,10 +33,16 @@
         <div><i class="bi bi-envelope icon"></i></div>
         <div class="tag">Contact</div>
       </a>
-      <div>
+      
+      <div style="margin-top: 20px;">
       <app-download></app-download></div>
     </div>
     
   </div>
-  <div class="col-md-9">abc</div>
+  <div class="col-md-9 mainContent">
+    <app-main-page id="main_page"></app-main-page>
+    <app-about id="about"></app-about>
+    <app-resume id="resume"></app-resume>
+    <app-contact id="contact"></app-contact>
+  </div>
 </div>
