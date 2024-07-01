@@ -1,43 +1,55 @@
-<div class="row" style="padding: 0;"  >
+<div class="row" style="padding: 0">
   <div class="col-md-3 sidenav">
     <div class="Profile">
       <div class="Image"></div>
       <div class="Name">
-        <p>Tejas</p><p class="surname"> Dabare</p>
+        <p>Tejas</p>
+        <p class="surname">Dabare</p>
       </div>
 
-      <div class="Position">{{currentWord}}</div>
+      <div class="Position">{{ currentWord }}</div>
 
       <div class="contact">
         <li>
-          <ul><i class="bi bi-envelope"></i></ul>
-          <ul><i class="bi bi-github"></i></ul>
-          <ul><i class="bi bi-linkedin"></i></ul>
+          <ul>
+            <i class="bi bi-envelope"></i>
+          </ul>
+          <ul>
+            <i class="bi bi-github"></i>
+          </ul>
+          <ul>
+            <i class="bi bi-linkedin"></i>
+          </ul>
         </li>
       </div>
     </div>
     <div class="navigators">
-      <a class="tab" href="#main_page">
-        <div><i class="bi bi-house icon"></i></div>
-        <div class="tag">Home</div>
-      </a>
-      <a class="tab" href="#about">
-        <div><i class="bi bi-person icon"></i></div>
-        <div class="tag">About</div>
-      </a>
-      <a class="tab" href="#resume">
-        <div><i class="bi bi-person-vcard icon"></i></div>
-        <div class="tag">Resume</div>
-      </a>
-      <a class="tab" href="#contact" style="border-bottom:1px solid #ffffff5d;">
-        <div><i class="bi bi-envelope icon"></i></div>
-        <div class="tag">Contact</div>
-      </a>
-      
-      <div style="margin-top: 20px;">
-      <app-download></app-download></div>
+      <div>
+        <a class="tab" href="#main_page">
+          <div><i class="bi bi-house icon"></i></div>
+          <div class="tag">Home</div>
+        </a>
+        <a class="tab" href="#about">
+          <div><i class="bi bi-person icon"></i></div>
+          <div class="tag">About</div>
+        </a>
+        <a class="tab" href="#resume">
+          <div><i class="bi bi-person-vcard icon"></i></div>
+          <div class="tag">Resume</div>
+        </a>
+        <a
+          class="tab"
+          href="#contact"
+          style="border-bottom: 1px solid #ffffff5d"
+        >
+          <div><i class="bi bi-envelope icon"></i></div>
+          <div class="tag">Contact</div>
+        </a>
+      </div>
+      <div class="downloadButton">
+        <app-download></app-download>
+      </div>
     </div>
-    
   </div>
   <div class="col-md-9 mainContent">
     <app-main-page id="main_page"></app-main-page>

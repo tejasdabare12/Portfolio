@@ -12,7 +12,7 @@
     color: var(--1, #fff);
     font-size: 96px;
     font-weight: 700;
-    line-height: 120px;
+    line-height: 15vh;
     font-family: sans-serif;
 
     .name {
@@ -25,15 +25,57 @@
     color: var(--7, #FF759C);
     font-size: 24px;
     font-weight: 500;
-    line-height: 36px;
+    line-height: 4vh;
     padding: 20px 0;
+    width: 410px;
   }
   .service{
     color: var(--14, #909090);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 30px;
     text-wrap:wrap;
     width: 410px;
   }
+  .contactTab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 5vh;
+
+    button{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 60px;
+      text-decoration: none;
+      text-align: center;
+      border-radius: 32px;
+      font-size: 20px;
+      font-weight: 500;
+      position: relative;
+      overflow: hidden;
+      transition: all .35s;
+      z-index: 1;
+      padding: 16px 30px;
+      border: none;
+
+    }
+    .btn-1{
+      background-color: #00CC97;
+    }
+    .btn-2{
+      background-color: #FFDB59;;
+    }
+    .btn-1:hover{
+      background-color: #FF759C;
+    }
+    .btn-2:hover{
+      background-color: #FF759C;
+    }
+
+  }
+  
 }
