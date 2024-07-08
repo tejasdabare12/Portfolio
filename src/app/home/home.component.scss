@@ -1,5 +1,5 @@
 .sidenav {
-  z-index: 1;
+  z-index: 99;
   height: 100vh;
   position: sticky;
   top: 0;
@@ -17,28 +17,28 @@
     justify-content: center;
     flex-direction: column;
 
-    .Name{
-        height: 8vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        font-size: 32px;
-        color: white;
-        font-weight: 700;
-        font-family: sans-serif;
-        padding: 15px 0 5px 0;
+    .Name {
+      height: 8vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      font-size: 32px;
+      color: white;
+      font-weight: 700;
+      font-family: sans-serif;
+      padding: 15px 0 5px 0;
 
-        .surname{
-            font-weight: 400;
-            margin-left: 1vh;
-        }
+      .surname {
+        font-weight: 400;
+        margin-left: 1vh;
+      }
     }
 
     .Position {
       display: flex;
       justify-content: center;
-      align-items:start;
+      align-items: start;
       height: 6vh;
       color: var(--14, #909090);
       text-align: center;
@@ -82,10 +82,11 @@
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    width: 100%;
-    max-height: 50vh;
     justify-content: space-around;
+    width: 100%;
+    height: 50vh;
     margin-top: 5%;
+    padding: 0;
 
     .tab {
       border-top: 1px solid #ffffff5d;
@@ -93,10 +94,10 @@
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
-      align-items: center;
       padding: 10px 20px;
       text-decoration: none;
       font-family: "DM Sans, sans-serif";
+
 
       .icon {
         color: rgb(221, 221, 221);
@@ -109,17 +110,183 @@
         font-size: 16px;
       }
     }
+
     .active-menu-action a.active {
-      filter: brightness(0) saturate(100%) invert(55%) sepia(64%) saturate(887%)
-        hue-rotate(120deg) brightness(94%) contrast(101%);
+      filter: brightness(0) saturate(100%) invert(55%) sepia(64%) saturate(887%) hue-rotate(120deg) brightness(94%) contrast(101%);
     }
+
     a:hover {
       color: darkcyan;
     }
+
   }
 }
 
-.mainContent{
+@media (max-width: 768px) {
+  .sidenav {
+    position: relative;
+    width: 80%;
+  }
+
+}
+
+.mainContent {
+  padding: 0;
+  margin: 0;
+  background-color: #0F141C;
+
+  #main_page , #about, #resume, #contact{
+    padding: 0px;
+    margin: 0;
+
+  }
+}
+
+.hamburger {
+  display: none;
+}
+
+.sidenav2{
+  display: none;
+}
+// ---------
+
+@media (max-width: 768px) {
+  .sidenav {
+    display: none !important;
+  }
+
+  .hamburger {
+    display: block;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background-color:rgba(51, 48, 48, 0.466) !important;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 30px;
+    z-index: 2;
+
+  }
+
+  .sidenav2 {
+    width: 70%;
+    height: 100vh;
+    top: 0;
     padding: 0;
-    background-color: #0F141C;;
+    background-color: #212529;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+  
+    .Profile {
+      width: 100%;
+      height: 40vh;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0;
+  
+      .Name {
+        height: 8vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 32px;
+        color: white;
+        font-weight: 700;
+        font-family: sans-serif;
+        padding: 15px 0 5px 0;
+  
+        .surname {
+          font-weight: 400;
+          margin-left: 1vh;
+        }
+      }
+  
+      .Position {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        height: 6vh;
+        color: var(--14, #909090);
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+      }
+  
+      .contact {
+        li {
+          height: 6vh;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          text-decoration: none;
+          list-style: none;
+          align-items: center;
+          overflow: hidden;
+          padding: 0;
+          margin: 0;
+          font-size: 18px;
+          color: azure;
+  
+          ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 6vh;
+            border: 1px solid black;
+            background-color: black;
+            border-radius: 50%;
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
+    }
+  
+    .navigators {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      justify-content: space-around;
+      width: 100%;
+      height: 50vh;
+      margin-top: 5%;
+      padding: 0;
+  
+      .tab {
+        border-top: 1px solid #ffffff5d;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-family: "DM Sans, sans-serif";
+  
+  
+        .icon {
+          color: rgb(221, 221, 221);
+          margin-right: 10px;
+          font-size: 22px;
+        }
+  
+        .tag {
+          color: var(--8, #909090);
+          font-size: 16px;
+        }
+      }
+  
+      .active-menu-action a.active {
+        filter: brightness(0) saturate(100%) invert(55%) sepia(64%) saturate(887%) hue-rotate(120deg) brightness(94%) contrast(101%);
+      }
+      
+  
+    }
+  }
 }
