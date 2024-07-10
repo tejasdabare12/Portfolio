@@ -1,3 +1,6 @@
+.main{
+  height: auto;
+  overflow:visible;
 .info {
   display: flex;
   flex-direction: column;
@@ -5,6 +8,8 @@
   margin-top: 10vh;
   padding: 0 20px 0 35px;
   z-index: 2;
+  margin-bottom: 5vh;
+  
 
   .fullName {
     display: flex;
@@ -101,19 +106,56 @@
   }
 }
 .avtar{
-  z-index: 1;
-  background-color: #FF759C;
-  overflow: hidden;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
 
   .avtar-widge{
+    margin-left: -47vh;
+    margin-top: -50vh;
+    width: 23vh;
+    height: 23vh;
+    position:absolute;
+    animation: rotation infinite 4s linear;
 
+    img{
+      max-width: 100%;
+      background: none;
+    }
   }
-
   .avtar-img{
-    width: 100%;
+    width: 50vh;
     height: 50vh;
-    background-color: red ;
+    background-color: rgb(255, 147, 147) ;
   }
 
+}
+
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media(max-width:767px){
+  .avtar{
+
+    .avtar-widge{
+      margin-left: -50vh;
+      margin-top: -50vh;
+    }
+
+    .avtar-img{
+      margin: 5vh 0vh;
+      margin-top: 6vh;
+    }
+  }
+}
 }

@@ -1,4 +1,77 @@
-p{
-    height: 100vh;
-    background-color: rgb(0, 255, 38);
+.main {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0px 0px 0px 20px;
+
+    .tittle {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 20px;
+        position: relative;
+
+        .Text {
+            color: var(--1, #FFF);
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 64px;
+        }
+       
+
+        .Line {
+            height: 50px;
+            width: 68%;
+            border-bottom: 2px solid #909090;
+        }
+      
+    }
+    @media (max-width:768px) {
+        .tittle{
+            gap: 0px;
+            flex-wrap: nowrap;
+        
+        .Text{
+            font-size: 33px;
+            line-height: 48px;
+            width: 50%;
+           
+        }
+        .Line {
+            height: 37px;
+            width: 45%;
+        }
+    }
+    }
+
+    .story {
+        padding: 20px 20px 20px 0;
+        color: var(--14, #909090);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+
+        span {
+            color: #FFF;
+        }
+    }
+}
+
+table {
+    width: 60%;
+    border-collapse: collapse;
+    color: var(--14, #909090);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+td:nth-child(3) {
+    color: rgb(255, 255, 255);
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+
 }
