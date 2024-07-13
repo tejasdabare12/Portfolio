@@ -1,1 +1,25 @@
-<p>resume works!</p>
+
+<!--Education and experience-->
+<div class="main">
+  <div class="Left">
+    <app-shared-tittle [Data]="Education_heading"></app-shared-tittle>
+    <app-shared-resume-template  [Data]="BE"></app-shared-resume-template>
+    <app-shared-resume-template  [Data]="HSC"></app-shared-resume-template>
+  </div>
+  <div class="Right">
+    <app-shared-tittle [Data]="Experience_heading"></app-shared-tittle>
+    <app-shared-resume-template [Data]="Internship"></app-shared-resume-template>
+    <app-shared-resume-template [Data]="Developer"></app-shared-resume-template>
+  </div>
+</div>
+
+<!--Coding skills-->
+<div class="main2">
+<app-shared-tittle [Data]="codingSkill"></app-shared-tittle>
+<div *ngFor=" let i of allSkills">
+  <app-shared-skills-template [Data]="i"></app-shared-skills-template>
+</div>
+
+
+
+</div>

@@ -10,6 +10,9 @@ import { DownloadComponent } from './download/download.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { ResumeComponent } from './resume/resume.component';
 import { AboutComponent } from './about/about.component';
+import { SharedTittleComponent } from './shared-tittle/shared-tittle.component';
+import { SharedResumeTemplateComponent } from './shared-resume-template/shared-resume-template.component';
+import { SharedSkillsTemplateComponent } from './shared-skills-template/shared-skills-template.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { AboutComponent } from './about/about.component';
     DownloadComponent,
     MainPageComponent,
     ResumeComponent,
-    AboutComponent
+    AboutComponent,
+    SharedTittleComponent,
+    SharedResumeTemplateComponent,
+    SharedSkillsTemplateComponent
   ],
   imports: [
     BrowserModule,
