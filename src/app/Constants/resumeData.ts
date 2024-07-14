@@ -52,11 +52,6 @@ export const Skills=[
     skill:"Typescript"
   },
   {
-    logo:"../../assets/skills/git-icon.svg",
-    percent:"80%",
-    skill:"Git"
-  },
-  {
     logo:"../../assets/skills/angular-icon-1.svg",
     percent:"80%",
     skill:"Angular"
@@ -76,4 +71,9 @@ export const Skills=[
     percent:"80%",
     skill:"Cloud Function"
   },
+  // {
+  //   logo:"../../assets/skills/git-icon.svg",
+  //   percent:"80%",
+  //   skill:"Git"
+  // },
 ]

@@ -54,7 +54,6 @@
 
 }
 .main2{
-    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -62,5 +61,22 @@
     gap: 10px;
     flex-wrap: wrap;
     overflow: hidden;
+
+    .skill-container {
+        margin-bottom: 50px;
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       gap: 35px;
+       justify-content: flex-start;
+       padding-right: 20px;
+
+       @media(max-width:450px){
+        gap:20px
+       }
+       @media(max-width:360px){
+        gap:10px
+       }
+      }
 
 }

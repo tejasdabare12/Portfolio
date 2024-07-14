@@ -16,7 +16,7 @@
     }
 
     .Line {
-        width: 60%;
+        flex-grow: 1;
         height: 50px;
         border-bottom: 2px solid #909090;
     }
@@ -24,17 +24,14 @@
     @media (max-width:768px) {
 
         gap: 5px;
-        flex-wrap: nowrap;
 
         .Text {
             font-size: 33px;
             line-height: 48px;
-            width:fit-content;
         }
 
         .Line {
             height: 37px;
-            width: 40%;
         }
 
     }

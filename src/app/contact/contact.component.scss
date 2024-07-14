@@ -1,4 +1,120 @@
-p{
-    height: 100vh;
-    background-color: rgb(59, 48, 160);
+.main {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0px 0px 0px 20px;
+
+    .subHeading {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #fff;
+        padding: 30px 0px 20px 0px;
+        font-weight: 500;
+    }
+
+    .contactWay {
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .Contact {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 20px;
+        border-radius: 20px;
+        background: var(--5, #171B22);
+        padding: 10px;
+        flex: 1 1 300px;
+        max-width: 450px;
+        box-sizing: border-box;
+
+        @media(max-width: 450px) {
+            margin-right: 20px;
+            gap: 10px;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: #6F39FD;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 40px;
+        }
+
+        .body {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+
+            .heading {
+                font-size: 20px;
+                text-transform: uppercase;
+                color: #909090;
+            }
+
+            .description {
+                color: #fff;
+                font-size: 20px;
+                font-weight: 700;
+                letter-spacing: 1px;
+                cursor: pointer;
+            }
+
+            .description:hover {
+                color: #6F39FD;
+            }
+        }
+    }
+
+    @media(max-width: 360px) {
+        .contactWay {
+            gap: 10px;
+            padding: 5px;
+
+
+            .Contact {
+                flex: 1 1 100%;
+                /* Make the Contact elements take full width */
+                max-width: 100%;
+                /* Remove max-width to allow full width */
+                gap: 10px;
+                padding: 5px;
+
+
+                .logo {
+                    width: 60px;
+                    height: 60px;
+                    font-size: 30px;
+                    /* Reduce font size */
+                }
+
+                .body {
+                    gap: 5px;
+
+                    .heading {
+                        font-size: 16px;
+                        /* Reduce font size */
+                    }
+
+                    .description {
+                        font-size: 16px;
+                        /* Reduce font size */
+
+                    }
+                }
+            }
+        }
+    }
 }
