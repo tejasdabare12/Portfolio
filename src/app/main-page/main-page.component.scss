@@ -92,7 +92,7 @@
 @media(max-width:767px){
   .info{
    margin-top: 7vh; 
-   padding: 0 20px 0px;
+   padding: 0 10px 0px 30px;
 
    .fullName{
     font-size: 47px;
@@ -102,6 +102,10 @@
    }
    .service{
     width: auto;
+   }
+   .contactTab{
+    margin-left: -15px;
+    gap:0px;
    }
   }
 }

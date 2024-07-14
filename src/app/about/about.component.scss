@@ -27,23 +27,6 @@
         }
       
     }
-    @media (max-width:768px) {
-        .tittle{
-            gap: 0px;
-            flex-wrap: nowrap;
-        
-        .Text{
-            font-size: 33px;
-            line-height: 48px;
-            width: 50%;
-           
-        }
-        .Line {
-            height: 37px;
-            width: 45%;
-        }
-    }
-    }
 
     .story {
         padding: 20px 20px 20px 0;
@@ -73,5 +56,16 @@ td:nth-child(3) {
 td {
     padding: 10px;
     text-align: left;
+}
 
+@media (max-width: 768px) {
+    .story{
+        font-size: 18px;
+    }
+    table{
+        font-size: 18px;
+    }
+    td{
+        padding: 10px 5px;
+    }
 }

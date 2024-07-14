@@ -1,1 +1,32 @@
-<p>resume works!</p>
+<!--Education and experience-->
+<div class="main">
+  <div class="Left">
+    <app-shared-tittle [Data]="Education_heading"></app-shared-tittle>
+    <app-shared-resume-template [Data]="BE"></app-shared-resume-template>
+    <app-shared-resume-template [Data]="HSC"></app-shared-resume-template>
+  </div>
+  <div class="Right">
+    <app-shared-tittle [Data]="Experience_heading"></app-shared-tittle>
+    <app-shared-resume-template
+      [Data]="Internship"
+    ></app-shared-resume-template>
+    <app-shared-resume-template [Data]="Developer"></app-shared-resume-template>
+  </div>
+</div>
+
+<!--Coding skills-->
+<div class="main2">
+  <app-shared-tittle [Data]="codingSkill"></app-shared-tittle>
+  <div class="skill-container">    
+      <app-shared-skills-template [Data]="allSkills[0]"></app-shared-skills-template>
+      <app-shared-skills-template [Data]="allSkills[1]"></app-shared-skills-template>
+      <app-shared-skills-template [Data]="allSkills[2]"></app-shared-skills-template>
+      <app-shared-skills-template [Data]="allSkills[3]"></app-shared-skills-template>   
+      <app-shared-skills-template [Data]="allSkills[4]"></app-shared-skills-template>
+      <app-shared-skills-template [Data]="allSkills[5]"></app-shared-skills-template>
+      <app-shared-skills-template [Data]="allSkills[6]"></app-shared-skills-template>
+      <app-shared-skills-template [Data]="allSkills[7]"></app-shared-skills-template>     
+      <app-shared-skills-template [Data]="allSkills[8]"></app-shared-skills-template>
+      <!-- <app-shared-skills-template [Data]="allSkills[9]"></app-shared-skills-template> -->
+  </div>
+</div>

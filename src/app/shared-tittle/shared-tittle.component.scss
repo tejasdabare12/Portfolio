@@ -1,0 +1,39 @@
+.tittle {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+    position: relative;
+    margin-top: 4vh;
+    margin-left: 5px;
+
+    .Text {
+        color: var(--1, #FFF);
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 64px;
+        width:fit-content;
+    }
+
+    .Line {
+        flex-grow: 1;
+        height: 50px;
+        border-bottom: 2px solid #909090;
+    }
+
+    @media (max-width:768px) {
+
+        gap: 5px;
+
+        .Text {
+            font-size: 33px;
+            line-height: 48px;
+        }
+
+        .Line {
+            height: 37px;
+        }
+
+    }
+
+}
