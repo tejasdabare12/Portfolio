@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: flex-start;
     padding: 0px 0px 0px 20px;
+    margin-right: 20px;
 
     .subHeading {
         font-size: 20px;
@@ -34,6 +35,7 @@
         flex: 1 1 300px;
         max-width: 450px;
         box-sizing: border-box;
+        box-shadow: 0 0 5px rgba(150 150 150);
 
         @media(max-width: 450px) {
             margin-right: 20px;
@@ -43,7 +45,7 @@
         .logo {
             width: 80px;
             height: 80px;
-            background: #6F39FD;
+            background: #00CC97;
             border-radius: 10px;
             display: flex;
             align-items: center;
@@ -73,7 +75,7 @@
             }
 
             .description:hover {
-                color: #6F39FD;
+                color: #00CC97;
             }
         }
     }
@@ -86,18 +88,17 @@
 
             .Contact {
                 flex: 1 1 100%;
-                /* Make the Contact elements take full width */
                 max-width: 100%;
-                /* Remove max-width to allow full width */
                 gap: 10px;
                 padding: 5px;
+                margin-right: 0px;
+                
 
 
                 .logo {
                     width: 60px;
                     height: 60px;
                     font-size: 30px;
-                    /* Reduce font size */
                 }
 
                 .body {
@@ -117,4 +118,66 @@
             }
         }
     }
+
+    /* General form styles */
+    form {
+        width: 100%;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: #171B22;
+        box-shadow: 0 0 5px rgba(150 150 150);
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        textarea{
+            min-height: 70px;
+        }
+
+
+    }
+
+}
+
+::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background: none !important;
+    width: 85% !important;
+
+    @media(max-width:450px) {
+        width: 33% !important;
+    }
+}
+
+::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-floating-label {
+    color:rgb(200, 200, 200)!important;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+::ng-deep .mat-mdc-text-field-wrapper {
+    background-color: none;
+    width: 80%;
+}
+
+::ng-deep {
+    .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-text-field__input {
+        color: #FFF !important;
+        font-weight: 400;
+        font-size: 20px;
+    }
+}
+
+mat-form-field {
+    width: 900px !important;
+}
+
+::ng-deep .mat-mdc-raised-button[disabled][disabled] {
+    --mdc-protected-button-disabled-container-color: rgb(100 100 100) !important;
+    --mdc-protected-button-disabled-label-text-color: rgb(255, 255, 255) !important;
+
+}
+::ng-deep html{
+    --mdc-filled-text-field-input-text-placeholder-color: rgb(150, 150, 150)  !important;
 }

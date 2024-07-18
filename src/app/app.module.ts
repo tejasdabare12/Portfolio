@@ -13,6 +13,10 @@ import { AboutComponent } from './about/about.component';
 import { SharedTittleComponent } from './shared-tittle/shared-tittle.component';
 import { SharedResumeTemplateComponent } from './shared-resume-template/shared-resume-template.component';
 import { SharedSkillsTemplateComponent } from './shared-skills-template/shared-skills-template.component';
+import { MatButtonModule } from '@angular/material/button';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+
 
 @NgModule({
   declarations: [
@@ -25,15 +29,19 @@ import { SharedSkillsTemplateComponent } from './shared-skills-template/shared-s
     AboutComponent,
     SharedTittleComponent,
     SharedResumeTemplateComponent,
-    SharedSkillsTemplateComponent
+    SharedSkillsTemplateComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatButtonModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    FormsModule,
   
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

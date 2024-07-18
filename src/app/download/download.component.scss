@@ -2,16 +2,16 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding:0;
-	height: 60px;
-	width: 90%;
-	line-height: 50px;
+    padding: 0;
+    height: 60px;
+    width: 90%;
+    line-height: 50px;
     background-color: #0F141C;
     border-radius: 30px;
     transition: 0.5s;
     cursor: pointer;
-    margin-left:2vh ;
-	
+    margin-left: 2vh;
+
 }
 
 .icon {
@@ -19,9 +19,9 @@
     align-items: center;
     justify-content: center;
     transition: transform 0.5s;
-	display: block;
-    background-color: #FF759C;
-    position:relative;
+    display: block;
+    background-color: #00CC97;
+    position: relative;
     margin: 5px;
     line-height: 42px;
     height: 48px;
@@ -29,24 +29,25 @@
     left: 0;
     transition: .5s;
     border-radius: 50%;
-	font-size: 20px;
-	transition-timing-function:linear;
-	img{
-		margin-left: 12px;
-		width: 50%;
-		height: 50%;
-		object-fit: contain;
-	}
+    font-size: 20px;
+    transition-timing-function: linear;
+
+    img {
+        margin-left: 12px;
+        width: 50%;
+        height: 50%;
+        object-fit: contain;
+    }
 
 }
 
 .tab:hover {
-    background-color: #FF759C;
+    background-color: #00CC97;
 }
 
 .tab:hover .icon {
-    left: calc(100% - 58px); 
-	background-color: rgb(255, 255, 255);
+    left: calc(100% - 58px);
+    background-color: rgb(255, 255, 255);
 }
 
 .download {
@@ -66,36 +67,28 @@
 }
 
 .tab span {
-	margin-left: 10%;
+    margin-left: 10%;
     color: white;
     font-family: Arial, sans-serif;
     font-size: 16px;
-	font-weight: 600;
-}
-
-@media only screen and (max-width: 400px) {
-    .tab{
-		width: 100%;
-	}
-    .Download{
-        width: 100%;
-    }
+    font-weight: 600;
 }
 
 .Download {
     display: flex;
     align-items: center;
-    padding:0;
-	height: 60px;
-	width: 90%;
-	line-height: 50px;
-   background-color: white;
-   color: #54a33c;
+    padding: 0;
+    height: 60px;
+    width: 90%;
+    line-height: 50px;
+    background-color: white;
+    color: #54a33c;
     border-radius: 30px;
     transition: 0.5s;
     cursor: pointer;
-    justify-content: center;
-	
+    justify-content: space-around;
+    margin-left: 2vh;
+
 }
 
 .icon2 {
@@ -104,7 +97,7 @@
     justify-content: center;
     transition: transform 0.5s;
     position: relative;
-    margin: 5px;
+    margin-left: 5px;
     line-height: 42px;
     height: 48px;
     width: 48px;
@@ -119,22 +112,26 @@
     border-radius: 50%;
 }
 
-.Download  span {
-	margin-left: 5%;
-    color:#54a33c;
+.Download span {
+    margin-left: 5%;
+    color: #54a33c;
     font-family: Arial, sans-serif;
     font-size: 16px;
-	font-weight: 600;
+    font-weight: 600;
 }
 
-@media only screen and (max-width: 400px) {
-    .tab{
-		width: 100%;
-	}
-    .Download{
+@media(max-width: 600px) {
+    .tab {
         width: 100%;
-       span{
-        margin-left: 0;
-       }
+        margin-left: 0vh;
+    }
+
+    .Download {
+        width: 100%;
+        margin-left: 0vh;
+
+        span {
+            margin-left: 0;
+        }
     }
 }
