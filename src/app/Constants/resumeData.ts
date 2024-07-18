@@ -28,33 +28,33 @@ export const Experience=[
 export const Skills=[
   {
     logo:"../../assets/skills/html-1.svg",
-    percent:"80%",
+    percent:"95%",
     skill:"Html"
   },
   {
     logo:"../../assets/skills/sass-1.svg",
-    percent:"80%",
+    percent:"75%",
     skill:"Scss"
   },
   {
     logo:"../../assets/skills/bootstrap-4.svg",
-    percent:"80%",
+    percent:"82%",
     skill:"Bootstrap"
   },
   {
     logo:"../../assets/skills/logo-javascript.svg",
-    percent:"80%",
+    percent:"65%",
     skill:"Javascript"
   },
   {
     logo:"../../assets/skills/typescript.svg",
-    percent:"80%",
+    percent:"65%",
     skill:"Typescript"
   },
   {
     logo:"../../assets/skills/angular-icon-1.svg",
-    percent:"80%",
-    skill:"Angular"
+    percent:"70%",
+    skill:"Angular 18"
   },
   {
     logo:"../../assets/skills/ionic-icon.svg",
@@ -63,12 +63,12 @@ export const Skills=[
   },
   {
     logo:"../../assets/skills/firebase-1.svg",
-    percent:"80%",
+    percent:"78%",
     skill:"Firebase"
   },
   {
     logo:"../../assets/skills/google-cloud-1.svg",
-    percent:"80%",
+    percent:"58%",
     skill:"Cloud Function"
   },
   // {

@@ -14,7 +14,6 @@ export class SharedSkillsTemplateComponent implements OnInit {
   ngOnInit(): void {
    
     this.skillName=this.Data.skill
-    console.log(this.skillName)
   }
 
   skillName:string=""

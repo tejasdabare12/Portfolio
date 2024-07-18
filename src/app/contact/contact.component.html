@@ -17,4 +17,71 @@
       </div>
     </div>
   </div>
+
+  <div>
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+      <!-- name -->
+       <div>
+      <mat-form-field appearance="fill" class="Name">
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="name" placeholder="Enter your name" />
+        <mat-error
+          *ngIf="
+            userForm.get('name')?.invalid && userForm.get('name')?.touched
+          "
+        >
+          Name is required.
+        </mat-error>
+      </mat-form-field>
+      <!-- email -->
+      <mat-form-field appearance="fill" class="Email">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email" placeholder="Enter your email" />
+        <mat-error
+          *ngIf="
+            userForm.get('email')?.invalid && userForm.get('email')?.touched
+          "
+        >
+          Email is required.
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div>
+      <!-- subject -->
+      <mat-form-field appearance="fill" class="Message">
+        <mat-label>Subject</mat-label>
+        <textarea matInput formControlName="subject" placeholder="Enter your Subject"></textarea>
+        <mat-error
+          *ngIf="
+            userForm.get('subject')?.invalid && userForm.get('subject')?.touched
+          "
+        >
+          subject is required.
+        </mat-error>
+      </mat-form-field>
+    </div>
+      <!-- message -->
+    <div>
+      <mat-form-field appearance="fill">
+        <mat-label>Message</mat-label>
+        <textarea matInput formControlName="message" placeholder="Enter your Message" ></textarea>
+        <mat-error
+          *ngIf="
+            userForm.get('message')?.invalid && userForm.get('message')?.touched
+          "
+        >
+          message is required.
+        </mat-error>
+      </mat-form-field>
+    </div>
+      <button
+        mat-raised-button
+        color="primary"
+        type="submit"
+        [disabled]="userForm.invalid"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
 </div>
