@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { Subject } from 'rxjs';
+import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
+import { FormControl, FormGroup, NgForm, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -10,6 +10,7 @@ import { Subject } from 'rxjs';
 export class ContactComponent  {
 
   userForm!: FormGroup;
+  Data="Get In Touch."
 
   constructor(){
     this.userForm=new FormGroup({
@@ -22,11 +23,25 @@ export class ContactComponent  {
   }
 
   onSubmit(){
-    if(this.userForm){
-      console.log("user form data...",this.userForm.value)
-    }
+   this.sendEmail(this.userForm.value)
   }
+  
+  public sendEmail(e:Event) {
+    debugger
+    e.preventDefault();
 
-  Data="Get In Touch."
+    emailjs
+      .sendForm('service_67cue1h', 'template_h2sl5os', e.target as HTMLFormElement, {
+        publicKey: 'wNBEmP6Ltz5FJaZ4D',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', (error as EmailJSResponseStatus).text);
+        },
+      );
+  }
 
 }
