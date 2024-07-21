@@ -6,12 +6,13 @@
     width: 200px;
     height: 80px;
     flex-direction: row;
-    gap:15px;
+    gap: 15px;
     margin-bottom: 10px;
 
     .logo {
         margin-left: 30px;
         width: 50px;
+
         img {
             width: 100%;
         }
@@ -21,7 +22,7 @@
         width: 100px;
         display: flex;
         flex-direction: column;
-        align-items:flex-start;
+        align-items: flex-start;
 
 
         .percent {
@@ -41,132 +42,162 @@
         }
 
     }
-    @media(max-width:450px){
-        width:165px;
+
+    @media(max-width:450px) {
+        width: 165px;
         gap: 10px;
         height: 75px;
-        .logo{
+
+        .logo {
             margin-left: 25px;
         }
-        .info{
-            .percent{
+
+        .info {
+            .percent {
                 font-size: 22px;
             }
-            .body{
+
+            .body {
                 font-size: 15px;
             }
         }
     }
-    @media(max-width:360px){
-        width:155px;
+
+    @media(max-width:360px) {
+        width: 155px;
         gap: 10px;
         height: 65px;
-        .logo{
+
+        .logo {
             margin-left: 25px;
         }
-        .info{
-            .percent{
+
+        .info {
+            .percent {
                 font-size: 20px;
             }
-            .body{
+
+            .body {
                 font-size: 15px;
             }
         }
     }
 }
-.Html{
-    background-color:rgba(255, 149, 49, 0.1);
-    border: 2px solid var(--8, rgba(255, 149, 49,));
-   .info{
-    .body{
-        color:  rgba(255, 149, 49,);;
+
+.Html {
+    background-color: rgba(255, 149, 49, 0.1);
+    border: 2px solid var(--8, rgba(255, 149, 49, ));
+
+    .info {
+        .body {
+            color: rgba(255, 149, 49, );
+            ;
+        }
     }
 }
-}
-.Scss{
-    background-color:rgba(255, 49, 118, 0.1);
-    border: 2px solid var(--8,rgba(255, 49, 118));
-    .info{
-    .body{
-        color: rgba(255, 49, 118);
+
+.Scss {
+    background-color: rgba(255, 49, 118, 0.1);
+    border: 2px solid var(--8, rgba(255, 49, 118));
+
+    .info {
+        .body {
+            color: rgba(255, 49, 118);
+        }
     }
 }
-}
-.Bootstrap{
-    background-color:rgba(145, 49, 255, 0.1);
-    border: 2px solid var(--8,rgba(145, 49, 255));
-    .info{
-    .body{
-        color:  rgba(145, 49, 255);
+
+.Bootstrap {
+    background-color: rgba(145, 49, 255, 0.1);
+    border: 2px solid var(--8, rgba(145, 49, 255));
+
+    .info {
+        .body {
+            color: rgba(145, 49, 255);
+        }
     }
 }
-}
-.Javascript{
-    background-color:rgba(252, 255, 49, 0.1);
-    border: 2px solid var(--8,rgba(252, 255, 49));
-    .info{
-    .body{
-        color: rgba(252, 255, 49);
+
+.Javascript {
+    background-color: rgba(252, 255, 49, 0.1);
+    border: 2px solid var(--8, rgba(252, 255, 49));
+
+    .info {
+        .body {
+            color: rgba(252, 255, 49);
+        }
     }
 }
-}
-.Typescript{
-    background-color:rgba(49, 168, 255, 0.10);
+
+.Typescript {
+    background-color: rgba(49, 168, 255, 0.10);
     border: 2px solid var(--8, rgba(49, 168, 255));
-    .info{
-    .body{
-        color:  rgba(49, 168, 255);
+
+    .info {
+        .body {
+            color: rgba(49, 168, 255);
+        }
     }
 }
-}
-.Git{
-    background-color:rgba(255, 73, 49, 0.1);
-    border: 2px solid var(--8,rgba(255, 73, 49));
-    .info{
-    .body{
-        color:  rgba(255, 73, 49);
+
+.git {
+    background-color: rgba(255, 111, 49, 0.1);
+    border: 2px solid var(--8, rgb(255, 111, 49));
+
+    .info {
+        .body {
+            color: rgba(255, 111, 49);
+        }
     }
 }
-}
-.Angular{
-    background-color:rgba(255, 49, 49, 0.1);
-    border: 2px solid var(--8,rgba(255, 73, 49));
-    .info{
-    .body{
-        color:  rgba(255, 73, 49);
+
+.Angular {
+    background-color: rgba(255, 49, 49, 0.1);
+    border: 2px solid var(--8, rgba(255, 73, 49));
+
+    .info {
+        .body {
+            color: rgba(255, 73, 49);
+        }
     }
 }
-}
-.Ionic{
-    background-color:rgba(49, 190, 255, 0.1);
-    border: 2px solid var(--8,rgba(49, 190, 255));
-    .info{
-    .body{
-        color:  rgba(49, 190, 255);
+
+.Ionic {
+    background-color: rgba(49, 190, 255, 0.1);
+    border: 2px solid var(--8, rgba(49, 190, 255));
+
+    .info {
+        .body {
+            color: rgba(49, 190, 255);
+        }
     }
 }
-}
-.Firebase{
-    background-color:rgba(255, 131, 49, 0.1);
-    border: 2px solid var(--8,rgba(255, 131, 49,));
-    .info{
-    .body{
-        color:  rgba(255, 131, 49,);
+
+.Firebase {
+    background-color: rgba(255, 131, 49, 0.1);
+    border: 2px solid var(--8, rgba(255, 131, 49, ));
+
+    .info {
+        .body {
+            color: rgba(255, 131, 49, );
+        }
     }
 }
-}
-.cloudFunction{
-    width:250px;
+
+.cloudFunction {
+    width: 250px;
     background-color: rgb(96, 253, 75, 0.1);
-    border: 2px solid var(--8,rgba(96, 253, 75));
-    .info{
-    .body{
-        text-wrap: nowrap;
-        color:  rgba(96, 253, 75);
+    border: 2px solid var(--8, rgba(96, 253, 75));
+
+    .info {
+        .body {
+            text-wrap: nowrap;
+            color: rgba(96, 253, 75);
+        }
+
     }
-    
-}
-@media(max-width:450px){
-    width:200px;
-}
+
+    @media(max-width:450px) {
+        width: 200px;
+    }
 }

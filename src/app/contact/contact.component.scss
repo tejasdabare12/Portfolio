@@ -143,7 +143,7 @@
 
 ::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) {
     background: none !important;
-    width: 85% !important;
+    width: 100% !important;
 
     @media(max-width:450px) {
         width: 33% !important;

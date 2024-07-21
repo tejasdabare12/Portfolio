@@ -28,17 +28,17 @@ export const Experience=[
 export const Skills=[
   {
     logo:"../../assets/skills/html-1.svg",
-    percent:"95%",
+    percent:"85%",
     skill:"Html"
   },
   {
     logo:"../../assets/skills/sass-1.svg",
-    percent:"75%",
+    percent:"70%",
     skill:"Scss"
   },
   {
     logo:"../../assets/skills/bootstrap-4.svg",
-    percent:"82%",
+    percent:"80%",
     skill:"Bootstrap"
   },
   {
@@ -63,17 +63,17 @@ export const Skills=[
   },
   {
     logo:"../../assets/skills/firebase-1.svg",
-    percent:"78%",
+    percent:"70%",
     skill:"Firebase"
   },
   {
     logo:"../../assets/skills/google-cloud-1.svg",
-    percent:"58%",
+    percent:"55%",
     skill:"Cloud Function"
   },
-  // {
-  //   logo:"../../assets/skills/git-icon.svg",
-  //   percent:"80%",
-  //   skill:"Git"
-  // },
+  {
+    logo:"../../assets/skills/git-icon.svg",
+    percent:"65%",
+    skill:"Git"
+  },
 ]

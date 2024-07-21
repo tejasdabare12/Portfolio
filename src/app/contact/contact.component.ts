@@ -7,31 +7,25 @@ import { FormControl, FormGroup, NgForm, Validators } from '@angular/forms';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
-export class ContactComponent  {
+export class ContactComponent {
 
   userForm!: FormGroup;
-  Data="Get In Touch."
+  Data = "Get In Touch."
 
-  constructor(){
-    this.userForm=new FormGroup({
-      name: new FormControl('',[ Validators.required]),
-      email: new FormControl('', [  Validators.required, Validators.email ]),
-      subject:new FormControl('', [ Validators.required]),
-      message:new FormControl('', [ Validators.required])
+  constructor() {
+    this.userForm = new FormGroup({
+      name: new FormControl('', [Validators.required]),
+      email: new FormControl('', [Validators.required, Validators.email]),
+      subject: new FormControl('', [Validators.required]),
+      message: new FormControl('', [Validators.required])
 
     });
   }
 
-  onSubmit(){
-   this.sendEmail(this.userForm.value)
-  }
-  
-  public sendEmail(e:Event) {
-    debugger
+  public sendEmail(e: Event) {
     e.preventDefault();
-
     emailjs
-      .sendForm('service_67cue1h', 'template_h2sl5os', e.target as HTMLFormElement, {
+      .sendForm('service_2l6260k', 'template_h2sl5os', e.target as HTMLFormElement, {
         publicKey: 'wNBEmP6Ltz5FJaZ4D',
       })
       .then(

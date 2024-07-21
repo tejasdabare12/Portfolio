@@ -9,7 +9,7 @@ export class ResumeComponent implements OnInit {
   
   Education_heading="Education."
   Experience_heading="Experience."
-  codingSkill="Coding Skills."
+  codingSkill="Technical Skills."
   BE=Education[0]
   HSC=Education[1]
   Internship=Experience[0]

@@ -22,7 +22,7 @@ export class DownloadComponent implements OnChanges{
 }
 
 downloadPDF() {
-  const pdfUrl = '../../assets/Resume_tejas.pdf'; // Replace with your PDF file URL
+  const pdfUrl = '../../assets/TejasDabare.pdf'; // Replace with your PDF file URL
   
   const link = document.createElement('a');
   link.href = pdfUrl;
