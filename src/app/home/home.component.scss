@@ -20,13 +20,11 @@
     .Name {
       height: 8vh;
       display: flex;
-      flex-direction: row;
       justify-content: center;
       align-items: center;
       font-size: 32px;
       color: white;
       font-weight: 700;
-      font-family: sans-serif;
       padding: 15px 0 5px 0;
 
       .surname {
@@ -51,7 +49,6 @@
       li {
         height: 6vh;
         display: flex;
-        flex-direction: row;
         justify-content: space-evenly;
         text-decoration: none;
         list-style: none;
@@ -91,13 +88,10 @@
     .tab {
       border-top: 1px solid #ffffff5d;
       display: flex;
-      flex-direction: row;
       justify-content: flex-start;
       align-items: center;
       padding: 10px 20px;
       text-decoration: none;
-      font-family: "DM Sans, sans-serif";
-
 
       .icon {
         color: rgb(221, 221, 221);
@@ -112,31 +106,26 @@
     }
 
     .active-menu-action a.active {
-      filter: brightness(0) saturate(100%) invert(55%) sepia(64%) saturate(887%) hue-rotate(120deg) brightness(94%) contrast(101%);
+      filter: brightness(0) saturate(100%) invert(55%) sepia(64%) saturate(887%)
+        hue-rotate(120deg) brightness(94%) contrast(101%);
     }
 
     a:hover {
       color: darkcyan;
     }
-
   }
-}
-
-@media (max-width: 768px) {
-  .sidenav {
-    position: relative;
-    width: 80%;
-  }
-
 }
 
 .mainContent {
   padding: 0;
   margin: 0;
-  background-color: #0F141C;
+  background-color: #0f141c;
   overflow: hidden;
 
-  #main_page , #about, #resume, #contact{
+  #main_page,
+  #about,
+  #resume,
+  #contact {
     padding: 0;
     margin: 0;
   }
@@ -146,14 +135,15 @@
   display: none;
 }
 
-.sidenav2{
+.sidenav2 {
   display: none;
 }
-// ---------
 
 @media (max-width: 768px) {
   .sidenav {
     display: none !important;
+    position: relative;
+    width: 80%;
   }
 
   .hamburger {
@@ -161,13 +151,12 @@
     position: fixed;
     top: 15px;
     right: 15px;
-    background-color:rgba(51, 48, 48, 0.466) !important;
+    background-color: rgba(51, 48, 48, 0.466) !important;
     border: none;
     border-radius: 50%;
     color: white;
     font-size: 30px;
     z-index: 2;
-
   }
 
   .sidenav2 {
@@ -179,7 +168,7 @@
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-  
+
     .Profile {
       width: 100%;
       height: 40vh;
@@ -187,25 +176,23 @@
       justify-content: center;
       flex-direction: column;
       padding: 0;
-  
+
       .Name {
         height: 8vh;
         display: flex;
-        flex-direction: row;
         justify-content: center;
         align-items: center;
         font-size: 32px;
         color: white;
         font-weight: 700;
-        font-family: sans-serif;
         padding: 15px 0 5px 0;
-  
+
         .surname {
           font-weight: 400;
           margin-left: 1vh;
         }
       }
-  
+
       .Position {
         display: flex;
         justify-content: center;
@@ -217,12 +204,12 @@
         font-weight: 500;
         line-height: 20px;
       }
-  
+
       .contact {
         li {
           height: 6vh;
           display: flex;
-          flex-direction: row;
+
           justify-content: space-evenly;
           text-decoration: none;
           list-style: none;
@@ -232,7 +219,7 @@
           margin: 0;
           font-size: 18px;
           color: azure;
-  
+
           ul {
             display: flex;
             align-items: center;
@@ -248,7 +235,7 @@
         }
       }
     }
-  
+
     .navigators {
       display: flex;
       flex-direction: column;
@@ -258,35 +245,26 @@
       height: 50vh;
       margin-top: 5%;
       padding: 0;
-  
+
       .tab {
         border-top: 1px solid #ffffff5d;
         display: flex;
-        flex-direction: row;
         justify-content: flex-start;
         align-items: center;
         padding: 10px 20px;
         text-decoration: none;
-        font-family: "DM Sans, sans-serif";
-  
-  
+
         .icon {
           color: rgb(221, 221, 221);
           margin-right: 10px;
           font-size: 22px;
         }
-  
+
         .tag {
           color: var(--8, #909090);
           font-size: 16px;
         }
       }
-  
-      .active-menu-action a.active {
-        filter: brightness(0) saturate(100%) invert(55%) sepia(64%) saturate(887%) hue-rotate(120deg) brightness(94%) contrast(101%);
-      }
-      
-  
     }
   }
 }
