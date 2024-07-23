@@ -1,0 +1,143 @@
+.sidenav {
+  z-index: 99;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 0;
+  background-color: #212529;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+
+  .Profile {
+      width: 100%;
+      height: 50%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      .Image {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+
+          img {
+              width: 70%;
+              object-fit: contain;
+          }
+      }
+
+      .Name {
+          height: 8vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 32px;
+          color: white;
+          font-weight: 700;
+          padding: 15px 0 5px 0;
+
+          .surname {
+              font-weight: 400;
+              margin-left: 1vh;
+          }
+      }
+
+      .Position {
+          height: 6vh;
+          display: flex;
+          justify-content: center;
+          align-items: start;
+          color: #909090;
+          text-align: center;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 20px;
+      }
+
+      .contact {
+          li {
+              height: 6vh;
+              display: flex;
+              justify-content: space-evenly;
+              align-items: center;
+              font-size: 18px;
+              color: azure;
+              padding: 0;
+              margin: 0;
+              list-style: none;
+              text-decoration: none;
+
+              ul {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  height: 100%;
+                  width: 6vh;
+                  border: 1px solid black;
+                  background-color: black;
+                  border-radius: 50%;
+                  margin: 0;
+                  padding: 0;
+              }
+          }
+      }
+  }
+
+  .navigators {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 100%;
+      height: 50%;
+      margin-top: 5%;
+      padding: 0;
+
+      .tab {
+          border-top: 1px solid #ffffff5d;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          padding: 10px 20px;
+          text-decoration: none;
+
+          .icon {
+              color: rgb(221, 221, 221);
+              margin-right: 10px;
+              font-size: 22px;
+          }
+
+          .tag {
+              color: #909090;
+              font-size: 16px;
+          }
+      }
+
+      a:hover {
+          color: darkcyan;
+      }
+  }
+}
+
+@media (max-width: 768px) {
+  .sidenav {
+      width: 100%;
+      height: 98%;
+      padding: 0;
+      background-color: #212529;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .Profile {
+          height: 50%;
+          padding: 0;
+      }
+
+      .navigators {
+          height: 50%;
+      }
+  }
+}

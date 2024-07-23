@@ -1,14 +1,18 @@
 import { Component, OnChanges, SimpleChanges } from '@angular/core';
-
+import { MatSnackBar } from '@angular/material/snack-bar';
 @Component({
   selector: 'app-download',
   templateUrl: './download.component.html',
   styleUrls: ['./download.component.scss']
 })
 export class DownloadComponent implements OnChanges{
+  constructor(private _snackBar: MatSnackBar){
+
+  }
+
   Images=[
     "../../assets/download.svg",
-    " ../../assets/green_double_circle_check_mark.jpg"
+    " ../../assets/2jddtzhEeQKou5nBPPjVy3URaeE.svg"
   ]
   CurrentImage=this.Images[0];
   ngOnChanges(changes: SimpleChanges): void {
@@ -16,14 +20,19 @@ export class DownloadComponent implements OnChanges{
 
   Active: boolean = false;
   onClick() {
-    console.log("I am good")
     this.Active = !this.Active;
     this.CurrentImage = this.Active ? this.Images[1] : this.Images[0];
+}
+openSnackBar(message: string): void {
+  this._snackBar.open(message, undefined,{
+    horizontalPosition:'center',
+    verticalPosition: 'top',
+    duration:4000,
+  });
 }
 
 downloadPDF() {
   const pdfUrl = '../../assets/TejasDabare.pdf'; // Replace with your PDF file URL
-  
   const link = document.createElement('a');
   link.href = pdfUrl;
   link.target = '_blank'; // Open in a new tab, remove if you want it to download directly
@@ -31,7 +40,12 @@ downloadPDF() {
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
-}
-}
-//../../assets/green_double_circle_check_mark.jpg
 
+  this.openSnackBar('The file was successfully downloaded!  ✅');
+
+  setTimeout(() => {
+    this.openSnackBar('Take a look at my resume! 📄');
+},4000)
+}
+
+}

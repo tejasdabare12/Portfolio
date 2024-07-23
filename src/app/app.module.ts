@@ -16,6 +16,8 @@ import { SharedSkillsTemplateComponent } from './shared-skills-template/shared-s
 import { MatButtonModule } from '@angular/material/button';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
+import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
+import { SideNavbarComponent } from "./side-navbar/side-navbar.component";
 
 
 @NgModule({
@@ -30,6 +32,7 @@ import { MatInputModule } from '@angular/material/input';
     SharedTittleComponent,
     SharedResumeTemplateComponent,
     SharedSkillsTemplateComponent,
+    SideNavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -39,8 +42,9 @@ import { MatInputModule } from '@angular/material/input';
     ReactiveFormsModule,
     MatInputModule,
     FormsModule,
-  
-  ],
+    MatSnackBarModule,
+    
+],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -135,15 +135,24 @@
         textarea{
             min-height: 70px;
         }
-
-
+        .formBottom{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            gap: 2%;
+            button:nth-child(1){
+                width: 88%;
+            }
+            button:nth-child(2){
+                width: 10%;
+            }
+        }
     }
-
 }
 
 ::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) {
     background: none !important;
-    width: 100% !important;
+    width: 760px !important;
 
     @media(max-width:450px) {
         width: 33% !important;

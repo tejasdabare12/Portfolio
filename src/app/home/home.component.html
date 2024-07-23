@@ -1,57 +1,8 @@
 <div class="row" style="padding: 0">
-  <div class="col-md-3 sidenav">
-    <div class="Profile">
-      <div class="Image"></div>
-      <div class="Name">
-        <p>Tejas</p>
-        <p class="surname">Dabare</p>
-      </div>
-
-      <div class="Position">{{ currentWord }}</div>
-
-      <div class="contact">
-        <li>
-          <ul>
-            <i class="bi bi-envelope-fill"></i>
-          </ul>
-          <ul>
-            <i class="bi bi-github"></i>
-          </ul>
-          <ul>
-            <i class="bi bi-linkedin"></i>
-          </ul>
-        </li>
-      </div>
-    </div>
-    <div class="navigators">
-      <div>
-        <a class="tab" href="#main_page">
-          <div><i class="bi bi-house icon"></i></div>
-          <div class="tag">Home</div>
-        </a>
-        <a class="tab" href="#about">
-          <div><i class="bi bi-person icon"></i></div>
-          <div class="tag">About</div>
-        </a>
-        <a class="tab" href="#resume">
-          <div><i class="bi bi-person-vcard icon"></i></div>
-          <div class="tag">Resume</div>
-        </a>
-        <a
-          class="tab"
-          href="#contact"
-          style="border-bottom: 1px solid #ffffff5d"
-        >
-          <div><i class="bi bi-envelope icon"></i></div>
-          <div class="tag">Contact</div>
-        </a>
-      </div>
-      <div class="downloadButton">
-        <app-download></app-download>
-      </div>
-    </div>
+  <div class="col-lg-3 bigNav">
+    <app-side-navbar></app-side-navbar>
   </div>
-  <div class="col-md-9 mainContent">
+  <div class="col-lg-9  mainContent">
     <app-main-page id="main_page"></app-main-page>
     <app-about id="about"></app-about>
     <app-resume id="resume"></app-resume>
@@ -68,60 +19,9 @@
 >
 <i class="bi bi-list"></i>
 </button>
-<div class="offcanvas offcanvas-start sidenav2" data-bs-scroll="true" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-  <div class="offcanvas-body body1">
+<div class="offcanvas offcanvas-start smallNav" data-bs-scroll="true" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-body">
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      <div class="Profile">
-        <div class="Image"></div>
-        <div class="Name">
-          <p>Tejas</p>
-          <p class="surname">Dabare</p>
-        </div>
-  
-        <div class="Position">{{ currentWord }}</div>
-  
-        <div class="contact">
-          <li>
-            <ul>
-              <i class="bi bi-envelope"></i>
-            </ul>
-            <ul>
-              <i class="bi bi-github"></i>
-            </ul>
-            <ul>
-              <i class="bi bi-linkedin"></i>
-            </ul>
-          </li>
-        </div>
-      </div>
-      <div class="navigators">
-        <div>
-          <a class="tab" href="#main_page" data-bs-dismiss="offcanvas" >
-            <div><i class="bi bi-house icon"></i></div>
-            <div class="tag">Home</div>
-          </a>
-          <a class="tab" href="#about" data-bs-dismiss="offcanvas">
-            <div><i class="bi bi-person icon"></i></div>
-            <div class="tag">About</div>
-          </a>
-          <a class="tab" href="#resume" data-bs-dismiss="offcanvas">
-            <div><i class="bi bi-person-vcard icon"></i></div>
-            <div class="tag">Resume</div>
-          </a>
-          <a
-            class="tab"
-            href="#contact"
-            data-bs-dismiss="offcanvas"
-            style="border-bottom: 1px solid #ffffff5d"
-          >
-            <div><i class="bi bi-envelope icon"></i></div>
-            <div class="tag">Contact</div>
-          </a>
-        </div>
-        <div class="downloadButton">
-          <app-download></app-download>
-        </div>
-      </div>
-   
+    <app-side-navbar></app-side-navbar>
   </div>
 </div>

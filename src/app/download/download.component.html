@@ -6,7 +6,7 @@
   <span class="text click-here">Click Here</span>
 </div>
 
-<div (click)="onClick()" [ngClass]="{ Download: Active }" *ngIf="Active">
+<div (mouseout)="onClick()" [ngClass]="{ Download: Active }" *ngIf="Active">
   <span class="text download">Download completed</span>
   <div class="icon2">
     <img [src]="CurrentImage" alt="icon2" />

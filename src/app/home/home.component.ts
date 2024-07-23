@@ -6,24 +6,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit{
-toggleSidenav() {
-throw new Error('Method not implemented.');
-}
   ngOnInit(): void {
-    this.startWordRotation()
+    
   }
-  
-
-  position:string[]=["Developer","Engineer","Coder","Programmer"]
-  currentWord:string=this.position[0];
-  currentIndex:number=0;
-  intervelID:any
-
-  startWordRotation():void{
-    this.intervelID = setInterval(()=>{
-      this.currentIndex=(this.currentIndex+1)%this.position.length;
-      this.currentWord = this.position[this.currentIndex];
-    },2000)
-  }
-
 }

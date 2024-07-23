@@ -19,61 +19,84 @@
   </div>
 
   <div>
-    <form [formGroup]="userForm" (ngSubmit)="sendEmail($event)">
+    <form [formGroup]="userForm" (ngSubmit)="sendResponse($event)">
       <!-- name -->
-       <div>
-      <mat-form-field appearance="fill" class="Name">
-        <mat-label>Name</mat-label>
-        <input matInput formControlName="name" placeholder="Enter your name"  name="name"/>
-        <mat-error
-          *ngIf="
-            userForm.get('name')?.invalid && userForm.get('name')?.touched
-          "
-        >
-          Name is required.
-        </mat-error>
-      </mat-form-field>
-      <!-- email -->
-      <mat-form-field appearance="fill" class="Email">
-        <mat-label>Email</mat-label>
-        <input matInput formControlName="email" placeholder="Enter your email"  name="email"/>
-        <mat-error
-          *ngIf="
-            userForm.get('email')?.invalid && userForm.get('email')?.touched
-          "
-        >
-          Email is required.
-        </mat-error>
-      </mat-form-field>
-    </div>
-    <div>
-      <!-- subject -->
-      <mat-form-field appearance="fill" class="Message">
-        <mat-label>Subject</mat-label>
-        <textarea matInput formControlName="subject" placeholder="Enter your Subject" name="subject"></textarea>
-        <mat-error
-          *ngIf="
-            userForm.get('subject')?.invalid && userForm.get('subject')?.touched
-          "
-        >
-          subject is required.
-        </mat-error>
-      </mat-form-field>
-    </div>
+      <div>
+        <mat-form-field appearance="fill" class="Name">
+          <mat-label>Name</mat-label>
+          <input
+            matInput
+            formControlName="name"
+            placeholder="Enter your name"
+            name="name"
+          />
+          <mat-error
+            *ngIf="
+              userForm.get('name')?.invalid && userForm.get('name')?.touched
+            "
+          >
+            Name is required.
+          </mat-error>
+        </mat-form-field>
+        <!-- email -->
+        <mat-form-field appearance="fill" class="Email">
+          <mat-label>Email</mat-label>
+          <input
+            matInput
+            formControlName="email"
+            placeholder="Enter your email"
+            name="email"
+          />
+          <mat-error
+            *ngIf="
+              userForm.get('email')?.invalid && userForm.get('email')?.touched
+            "
+          >
+            Email is required.
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div>
+        <!-- subject -->
+        <mat-form-field appearance="fill" class="Message">
+          <mat-label>Subject</mat-label>
+          <textarea
+            matInput
+            formControlName="subject"
+            placeholder="Enter your Subject"
+            name="subject"
+          ></textarea>
+          <mat-error
+            *ngIf="
+              userForm.get('subject')?.invalid &&
+              userForm.get('subject')?.touched
+            "
+          >
+            subject is required.
+          </mat-error>
+        </mat-form-field>
+      </div>
       <!-- message -->
-    <div>
-      <mat-form-field appearance="fill">
-        <mat-label>Message</mat-label>
-        <textarea matInput formControlName="message" placeholder="Enter your Message"  name="message"></textarea>
-        <mat-error
-          *ngIf="
-            userForm.get('message')?.invalid && userForm.get('message')?.touched
-          "
-        >
-          message is required.
-        </mat-error>
-      </mat-form-field>
-    </div>
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Message</mat-label>
+          <textarea
+            matInput
+            formControlName="message"
+            placeholder="Enter your Message"
+            name="message"
+          ></textarea>
+          <mat-error
+            *ngIf="
+              userForm.get('message')?.invalid &&
+              userForm.get('message')?.touched
+            "
+          >
+            message is required.
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div class="formBottom">
       <button
         mat-raised-button
         color="primary"
@@ -82,6 +105,8 @@
       >
         Submit
       </button>
+      <button type="reset" mat-raised-button  color="primary">Reset</button>
+    </div>
     </form>
   </div>
 </div>
