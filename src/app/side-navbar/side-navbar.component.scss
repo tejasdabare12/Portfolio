@@ -36,7 +36,7 @@
           align-items: center;
           font-size: 32px;
           color: white;
-          font-weight: 700;
+          font-weight: 500;
           padding: 15px 0 5px 0;
 
           .surname {
@@ -81,6 +81,10 @@
                   border-radius: 50%;
                   margin: 0;
                   padding: 0;
+                 a{
+                    color: white;
+                    font-size: 20px;
+                 }
               }
           }
       }

@@ -1,13 +1,13 @@
 export const Education = [
  { 
   Tittle: 'Bachelor of Engineering',
-  Institute: 'G.H. Raisoni College / 2016-2018',
+  Institute: 'G.H. Raisoni College, Nagpur / 2016-2018',
   Description:'Graduated with a strong foundation in engineering principles and hands-on experience, excelling in both academics and projects.'
 
  },
   {
     Tittle: 'Higher Secondary School',
-    Institute: 'Dr. Babasaheb Ambedkar College / 2016-2018',
+    Institute: 'Dr. Babasaheb Ambedkar College, Wadsa / 2016-2018',
     Description:
       'Excelled in Computer Science during my Higher Secondary education, mastering key concepts and practical skills.',
   },
@@ -15,12 +15,12 @@ export const Education = [
 export const Experience=[
     {
       Tittle: 'software Developer Intern',
-      Institute: 'Caliber Technology / Dec 2021-May 2022',
+      Institute: 'Caliber Technology, Nagpur / Dec 2021-May 2022',
       Description:'Gained practical experience and honed my coding skills as a Software Developer Intern, contributing to real-world projects and collaborating with cross-functional teams.'
     },
     {
       Tittle: 'Jr. Software Developer',
-      Institute: 'Senwell group pvt / May 2023-present',
+      Institute: 'Senwell group pvt, Pune / May 2023-present',
       Description:'Developed and maintained software applications, collaborating with senior developers to deliver high-quality solutions, and continuously improving my technical skills.'
     }
 ]

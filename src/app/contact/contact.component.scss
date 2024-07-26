@@ -22,77 +22,74 @@
         flex-direction: row;
         flex-wrap: wrap;
         gap: 20px;
-    }
 
-    .Contact {
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: row;
-        gap: 20px;
-        border-radius: 20px;
-        background: var(--5, #171B22);
-        padding: 10px;
-        flex: 1 1 300px;
-        max-width: 450px;
-        box-sizing: border-box;
-        box-shadow: 0 0 5px rgba(150 150 150);
 
-        @media(max-width: 450px) {
-            margin-right: 20px;
-            gap: 10px;
-        }
-
-        .logo {
-            width: 80px;
-            height: 80px;
-            background: #00CC97;
-            border-radius: 10px;
+        .Contact {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            font-size: 40px;
-        }
+            justify-content: flex-start;
+            flex-direction: row;
+            gap: 20px;
+            border-radius: 8px;
+            background: var(--5, #171B22);
+            padding: 10px;  
+            flex: 1 1 300px;
+            width: 50%;
+            box-sizing: border-box;
+            border: 1px solid rgb(150 150 150) ;
+            box-shadow: 0 0 5px rgba(150 150 150);
 
-        .body {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            gap: 10px;
-
-            .heading {
-                font-size: 20px;
-                text-transform: uppercase;
-                color: #909090;
-            }
-
-            .description {
+            .logo {
+                width: 80px;
+                height: 80px;
+                background: #00CC97;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 color: #fff;
-                font-size: 20px;
-                font-weight: 700;
-                letter-spacing: 1px;
-                cursor: pointer;
+                font-size: 40px;
             }
 
-            .description:hover {
-                color: #00CC97;
+            .body {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                gap: 10px;
+
+                .heading {
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    color: #909090;
+                }
+
+                .description {
+                    color: #fff;
+                    font-size: 20px;
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                    cursor: pointer;
+                }
             }
+        }
+        .Contact:hover{
+            .body{
+                .description {
+                    color: #00CC97;
+                }
+            } 
         }
     }
 
-    @media(max-width: 360px) {
+    @media(max-width: 450px) {
         .contactWay {
-            gap: 10px;
-            padding: 5px;
-
-
+            gap: 20px;
             .Contact {
                 flex: 1 1 100%;
                 max-width: 100%;
                 gap: 10px;
-                padding: 5px;
+                padding: 10px;
                 margin-right: 0px;
-                
+
 
 
                 .logo {
@@ -106,12 +103,11 @@
 
                     .heading {
                         font-size: 16px;
-                        /* Reduce font size */
                     }
 
                     .description {
                         font-size: 16px;
-                        /* Reduce font size */
+                        font-weight:600 ;
 
                     }
                 }
@@ -126,6 +122,7 @@
         padding: 20px;
         border-radius: 8px;
         background-color: #171B22;
+        border: 1px solid rgb(150 150 150) ;
         box-shadow: 0 0 5px rgba(150 150 150);
         gap: 20px;
         display: flex;
@@ -147,20 +144,22 @@
                 width: 10%;
             }
         }
+        @media(max-width :450px){
+            padding: 10px;
+        }
     }
 }
 
 ::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) {
-    background: none !important;
-    width: 760px !important;
-
-    @media(max-width:450px) {
-        width: 33% !important;
-    }
+   background-color: #ffffff00 !important;
+    width: 100% !important;
+    border: 1px solid rgb(150 150 150) ;
+    box-shadow: 0 0 3px rgba(150 150 150);
+    border-radius: 8px;
 }
 
 ::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-floating-label {
-    color:rgb(200, 200, 200)!important;
+    color: rgb(200, 200, 200) !important;
     font-weight: 400;
     font-size: 20px;
 }
@@ -172,14 +171,14 @@
 
 ::ng-deep {
     .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-text-field__input {
-        color: #FFF !important;
+        color: #ffffff !important;
         font-weight: 400;
         font-size: 20px;
     }
 }
 
 mat-form-field {
-    width: 900px !important;
+    width: 100% !important;
 }
 
 ::ng-deep .mat-mdc-raised-button[disabled][disabled] {
@@ -187,6 +186,8 @@ mat-form-field {
     --mdc-protected-button-disabled-label-text-color: rgb(255, 255, 255) !important;
 
 }
-::ng-deep html{
-    --mdc-filled-text-field-input-text-placeholder-color: rgb(150, 150, 150)  !important;
+
+::ng-deep html {
+    --mdc-filled-text-field-input-text-placeholder-color: rgb(200, 200, 200) !important;
+    --mdc-filled-text-field-focus-active-indicator-color: #00CC97 !important;
 }

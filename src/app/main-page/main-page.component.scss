@@ -9,7 +9,7 @@
     margin-top: 5vh;
     padding: 0 20px 0 35px;
     z-index: 2;
-    margin-bottom: 5vh;
+    margin-bottom: 30px;
 
 
     .fullName {
@@ -19,7 +19,7 @@
       color: var(--1, #fff);
       font-size: 96px;
       font-weight: 700;
-      line-height: 15vh;
+      line-height: 100px;
       font-family: sans-serif;
 
       .name {}
@@ -107,6 +107,7 @@
       }
 
       .contactTab {
+        margin-top: 2vh;
         margin-left: -15px;
         gap: 0px;
       }
@@ -114,7 +115,7 @@
   }
 
   .avtar {
-    margin-top: 5vh;
+    margin-top: 40px;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -123,8 +124,8 @@
 
 
     .avtar-widge {
-      margin-left: -60vh;
-      margin-top: -60vh;
+      margin-left: -390px;
+      margin-top: -390px;
       width: 150px;
       height: 150px;
       position: absolute;
@@ -159,6 +160,7 @@
 
   @media(max-width:767px) {
     .avtar {
+      margin-top: 0px;
 
       .avtar-widge {
         margin-left: -50vh;
