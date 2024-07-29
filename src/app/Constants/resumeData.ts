@@ -28,7 +28,7 @@ export const Experience=[
 export const Skills=[
   {
     logo:"../../assets/skills/html-1.svg",
-    percent:"85%",
+    percent:"80%",
     skill:"Html"
   },
   {
@@ -58,7 +58,7 @@ export const Skills=[
   },
   {
     logo:"../../assets/skills/ionic-icon.svg",
-    percent:"80%",
+    percent:"75%",
     skill:"Ionic"
   },
   {

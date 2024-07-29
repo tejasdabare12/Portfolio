@@ -20,7 +20,6 @@
       font-size: 96px;
       font-weight: 700;
       line-height: 100px;
-      font-family: sans-serif;
 
       .name {}
 
@@ -90,7 +89,7 @@
 
   }
 
-  @media(max-width:767px) {
+  @media(max-width:450px) {
     .info {
       margin-top: 7vh;
       padding: 0 10px 0px 30px;
@@ -124,12 +123,13 @@
 
 
     .avtar-widge {
-      margin-left: -390px;
-      margin-top: -390px;
+      margin-left: -380px;
+      margin-top: -380px;
       width: 150px;
       height: 150px;
       position: absolute;
       animation: rotation infinite 4s linear;
+      z-index: 2;
 
       img {
         max-width: 100%;
@@ -138,9 +138,10 @@
     }
 
     .avtar-img {
+      z-index: 1;
       width: 385px;
       height: 385px;
-      background-image: url("../../assets/Avtar_Main_Page.png");
+      background-image: url("../../assets/Avtar_Main_Page1.png");
       background-position: center;
       background-size: cover;
     }

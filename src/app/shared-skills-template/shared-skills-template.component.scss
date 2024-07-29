@@ -6,7 +6,7 @@
     width: 200px;
     height: 80px;
     flex-direction: row;
-    gap: 15px;
+    gap: 5px;
     margin-bottom: 10px;
 
     .logo {
@@ -43,9 +43,8 @@
     }
 
     @media(max-width:450px) {
-        width: 165px;
-        gap: 10px;
-        height: 75px;
+        width: 160px;
+        height: 70px;
 
         .logo {
             margin-left: 25px;
@@ -63,12 +62,12 @@
     }
 
     @media(max-width:360px) {
-        width: 155px;
-        gap: 10px;
+        width: 152px;
         height: 65px;
 
         .logo {
-            margin-left: 25px;
+            width: 40px;
+            margin-left: 20px;
         }
 
         .info {

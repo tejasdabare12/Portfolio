@@ -32,7 +32,7 @@ openSnackBar(message: string): void {
 }
 
 downloadPDF() {
-  const pdfUrl = '../../assets/TejasDabare.pdf'; // Replace with your PDF file URL
+  const pdfUrl = '../../assets/TejasDabare.pdf';
   const link = document.createElement('a');
   link.href = pdfUrl;
   link.target = '_blank'; // Open in a new tab, remove if you want it to download directly
@@ -41,7 +41,9 @@ downloadPDF() {
   link.click();
   document.body.removeChild(link);
 
-  this.openSnackBar('The file was successfully downloaded!  ✅');
+  setTimeout(() => {
+    this.openSnackBar('The file was successfully downloaded!  ✅');
+  }, 2000);
 
   setTimeout(() => {
     this.openSnackBar('Take a look at my resume! 📄');

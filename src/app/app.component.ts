@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   ngOnInit(): void {
-    AOS.init();
+    AOS.init({
+      duration:1000,
+      easing: 'ease',
+    });
   }
 }

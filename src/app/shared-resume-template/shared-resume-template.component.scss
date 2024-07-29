@@ -1,5 +1,4 @@
 .main {
-
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -25,7 +24,7 @@
             .innerCircle {
                 width: 10px;
                 height: 10px;
-                background-color: #FF759C;
+                background-color: #00CC97;
                 border-radius: 100%;
             }
         }
@@ -54,7 +53,7 @@
         }
 
         .subHeading {
-            color: #909090;
+            color: #b9b9b9;
             line-height: 24px;
             margin: 0;
             transition: all 0.3s;
@@ -76,8 +75,16 @@
         .container {
             margin-left: -10px;
         }
-        .Data{
-            font-size: 18px;
+        .content {
+            .heading {
+                color: #00CC97;
+            }
+    
+            .subHeading,
+            .Data {
+                color: #fff;
+                font-size: 18px;
+            }
         }
     }
 }
@@ -85,7 +92,7 @@
 .main:hover {
     .content {
         .heading {
-            color: #FF759C;
+            color:#00CC97;
         }
 
         .subHeading,

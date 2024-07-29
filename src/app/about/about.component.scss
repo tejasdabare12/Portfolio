@@ -5,27 +5,6 @@
     justify-content: flex-start;
     padding: 0px 20px 0px 20px;
 
-    .tittle {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        gap: 20px;
-        position: relative;
-
-        .Text {
-            color: var(--1, #FFF);
-            font-size: 48px;
-            font-weight: 700;
-            line-height: 64px;
-        }
-        .Line {
-            height: 50px;
-            width: 68%;
-            border-bottom: 2px solid #909090;
-        }
-      
-    }
-
     .story {
         padding: 20px 20px 20px 0;
         color: var(--14, #909090);
