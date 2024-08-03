@@ -18,6 +18,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 import { SideNavbarComponent } from "./side-navbar/side-navbar.component";
+import { ProjectsComponent } from './projects/projects.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { SideNavbarComponent } from "./side-navbar/side-navbar.component";
     SharedTittleComponent,
     SharedResumeTemplateComponent,
     SharedSkillsTemplateComponent,
-    SideNavbarComponent
+    SideNavbarComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

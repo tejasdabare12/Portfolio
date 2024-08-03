@@ -20,7 +20,7 @@ export const Experience=[
     },
     {
       Tittle: 'Jr. Software Developer',
-      Institute: 'Senwell group pvt, Pune / May 2023-present',
+      Institute: 'Senwell Group Private Limited, Pune / May 2023-present',
       Description:'Developed and maintained software applications, collaborating with senior developers to deliver high-quality solutions, and continuously improving my technical skills.'
     }
 ]

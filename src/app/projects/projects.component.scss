@@ -1,0 +1,53 @@
+.main {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0px 0px 0px 20px;
+    margin-right: 20px;
+    color: rgb(219, 219, 219);
+
+    .projectCard {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        box-sizing: border-box;
+        border: 1px solid #00CC97 ;
+        box-shadow: 0 0 5px #00CC97;
+        border-radius: 20px;
+        padding: 15px;
+
+        img {
+            width: 185px;
+            height: 185px;
+            border-radius: 20px;
+            box-shadow: 0 0 5px rgb(150 150 150);
+        }
+
+        .data {
+            display: flex;
+            flex-direction: column;
+           justify-content: center;
+            .title {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                p {
+                    font-size: 22px;
+                    font-weight: 500;
+                    color: #00CC97;
+                }
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+
+        @media(max-width:450px){
+            flex-wrap: wrap;    
+        }
+    }
+
+}
