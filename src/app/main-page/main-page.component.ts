@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CentralSeviceService } from '../Services/central-sevice.service';
 
 @Component({
   selector: 'app-main-page',
@@ -7,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPageComponent implements OnInit{
 
+  constructor(private central: CentralSeviceService){}
+
   ngOnInit(): void {
     this.setName()
+  }
+  sendData(data:string){
+    this.central.setData(data)
   }
 
   Names:string[]=["Aspiring Web Developer","Junior Code Artisan","Web Development Enthusiast","Rising Web Innovator"]

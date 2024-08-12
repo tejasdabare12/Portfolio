@@ -7,22 +7,11 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class DownloadComponent implements OnChanges{
   constructor(private _snackBar: MatSnackBar){
-
   }
 
-  Images=[
-    "../../assets/download.svg",
-    " ../../assets/2jddtzhEeQKou5nBPPjVy3URaeE.svg"
-  ]
-  CurrentImage=this.Images[0];
   ngOnChanges(changes: SimpleChanges): void {
   }
 
-  Active: boolean = false;
-  onClick() {
-    this.Active = !this.Active;
-    this.CurrentImage = this.Active ? this.Images[1] : this.Images[0];
-}
 openSnackBar(message: string): void {
   this._snackBar.open(message, undefined,{
     horizontalPosition:'center',

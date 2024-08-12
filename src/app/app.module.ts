@@ -19,6 +19,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 import { SideNavbarComponent } from "./side-navbar/side-navbar.component";
 import { ProjectsComponent } from './projects/projects.component';
+import { CentralSeviceService } from './Services/central-sevice.service';
 
 
 @NgModule({
@@ -34,7 +35,7 @@ import { ProjectsComponent } from './projects/projects.component';
     SharedResumeTemplateComponent,
     SharedSkillsTemplateComponent,
     SideNavbarComponent,
-    ProjectsComponent
+    ProjectsComponent,
   ],
   imports: [
     BrowserModule,

@@ -73,50 +73,6 @@
     font-weight: 500;
 }
 
-.Download {
-    display: flex;
-    align-items: center;
-    padding: 0;
-    height: 60px;
-    width: 90%;
-    line-height: 50px;
-    background-color: white;
-    color: #54a33c;
-    border-radius: 30px;
-    transition: 0.5s;
-    cursor: pointer;
-    justify-content: space-around;
-    margin-left: 2vh;
-
-}
-
-.icon2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.5s;
-    position: relative;
-    margin-left: 5px;
-    line-height: 42px;
-    height: 48px;
-    width: 48px;
-    left: 0;
-    border-radius: 50%;
-}
-
-.icon2 img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    border-radius: 50%;
-}
-
-.Download span {
-    margin-left: 5%;
-    color: #54a33c;
-    font-size: 16px;
-    font-weight: 500;
-}
 
 @media(max-width: 600px) {
     .tab {
@@ -124,12 +80,4 @@
         margin-left: 0vh;
     }
 
-    .Download {
-        width: 100%;
-        margin-left: 0vh;
-
-        span {
-            margin-left: 0;
-        }
-    }
 }

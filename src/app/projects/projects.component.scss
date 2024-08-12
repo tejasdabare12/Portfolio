@@ -20,7 +20,7 @@
         img {
             width: 185px;
             height: 185px;
-            border-radius: 20px;
+            border-radius: 15%;
             box-shadow: 0 0 5px rgb(150 150 150);
         }
 
@@ -47,6 +47,9 @@
 
         @media(max-width:450px){
             flex-wrap: wrap;    
+            img{
+                border-radius: 50%;
+            }           
         }
     }
 

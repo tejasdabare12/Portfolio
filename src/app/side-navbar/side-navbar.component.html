@@ -13,38 +13,38 @@
       <div class="contact">
         <li>
           <ul>
-          <a href="mailto:tejasdabare12@gmail.com" title="Gmail"> <i class="bi bi-envelope-fill"></i></a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tejasdabare12@gmail.com" title="Gmail" target="_blank"> <i class="bi bi-envelope-fill"></i></a>
           </ul>
           <ul>
-            <a href="https://github.com/tejasdabare12" title="Github"><i class="bi bi-github"></i></a>
+            <a href="https://github.com/tejasdabare12" title="Github" target="_blank"><i class="bi bi-github"></i></a>
           </ul>
           <ul>
-            <a href="https://in.linkedin.com/in/tejas-dabare" title="Linkidin"> <i class="bi bi-linkedin"></i></a>
+            <a href="https://in.linkedin.com/in/tejas-dabare" title="Linkedin" target="_blank"> <i class="bi bi-linkedin"></i></a>
           </ul>
         </li>
       </div>
     </div>
     <div class="navigators">
       <div>
-        <a class="tab" href="#main_page">
+        <a class="tab" (click)="sendData('main_page')">
           <div  data-aos="fade-right"><i class="bi bi-house icon"></i></div>
           <div  data-aos="fade-right" class="tag">Home</div>
         </a>
-        <a class="tab" href="#about">
+        <a class="tab" (click)="sendData('about')">
           <div  data-aos="fade-right"><i class="bi bi-person icon"></i></div>
           <div  data-aos="fade-right" class="tag">About</div>
         </a>
-        <a class="tab" href="#resume">
+        <a class="tab" (click)="sendData('resume')">
           <div  data-aos="fade-right"><i class="bi bi-person-vcard icon"></i></div>
           <div  data-aos="fade-right" class="tag">Resume</div>
         </a>
-        <a class="tab" href="#projects">
+        <a class="tab" (click)="sendData('projects')">
           <div  data-aos="fade-right"><i class="bi bi-briefcase icon"></i></div>
           <div  data-aos="fade-right" class="tag">Projects</div>
         </a>
         <a
           class="tab"
-          href="#contact"
+          (click)="sendData('contact')"
           style="border-bottom: 1px solid #ffffff5d"
         >
           <div><i class="bi bi-envelope icon"></i></div>
