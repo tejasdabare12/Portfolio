@@ -21,7 +21,7 @@ openSnackBar(message: string): void {
 }
 
 downloadPDF() {
-  const pdfUrl = '../../assets/TejasDabare.pdf';
+  const pdfUrl = '../../assets/Tejas Dabare Resume.pdf';
   const link = document.createElement('a');
   link.href = pdfUrl;
   link.target = '_blank'; // Open in a new tab, remove if you want it to download directly
